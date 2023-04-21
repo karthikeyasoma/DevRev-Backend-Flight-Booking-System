@@ -1,5 +1,5 @@
 # DevRev-Backend-Flight-Booking-System
-The task was to create a web application for flight ticket booking with backend functionalities (CRUD Operations). A console-based application would work, but submissions with a very basic UI would be given extra marks.
+The task was to create a web application for flight ticket booking with backend functionalities (CRUD Operations).
 
 ## Type of Users
 
