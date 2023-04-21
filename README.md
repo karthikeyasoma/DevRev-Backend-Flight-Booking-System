@@ -119,6 +119,20 @@ The user-side front end is completed, but some part of the admin-side front end 
 ### Options for Admin
 
 **![image](https://user-images.githubusercontent.com/84908359/233593275-d2dadc1b-01c6-4047-84ed-27ac98298714.png)**
+
+### Flight schemaa
+**![image](https://user-images.githubusercontent.com/84908359/233596509-188c4a8a-a309-4ec7-b86c-1088e650a6a8.png)**
+
+### Bookings schema
+**![image](https://user-images.githubusercontent.com/84908359/233596656-4721c2d6-e053-4577-8ea5-fd600dde07ea.png)**
+
+### Users schema
+**![image](https://user-images.githubusercontent.com/84908359/233596812-ab640778-2380-4941-8d6a-d99d6f659373.png)**
+
+## Post Man test for one of the API calls its similary done for all others
+![image](https://user-images.githubusercontent.com/84908359/233597077-b332feba-9362-4bd2-a34a-0225dc0816f3.png)
+
+
 <!-- 
 Output-
 Login Page for admin and user
