@@ -97,4 +97,22 @@ The user-side front end is completed, but some part of the admin-side front end 
 - express
 - axios
 
+Output-
+Login Page for admin and user
+![image](https://user-images.githubusercontent.com/84908359/233592619-e38af0d5-b567-4bb1-9511-5bc28fb592d7.png)
+Options for successful login user
+![image](https://user-images.githubusercontent.com/84908359/233592758-64907dcf-97cc-4b2f-8141-9d3ffc1bb653.png)
+display all user bookings
+![image](https://user-images.githubusercontent.com/84908359/233592809-460a4692-c671-4a27-8cac-065ee18f6088.png)
+Search for flight by user
+![image](https://user-images.githubusercontent.com/84908359/233593045-9cffe6db-4b6b-4c0e-9c7c-de11e2c25055.png)
+Book flight by user
+![image](https://user-images.githubusercontent.com/84908359/233593178-f026351a-0d75-4ad6-ad05-68cf1dace20d.png)
+Options for Admin
+![image](https://user-images.githubusercontent.com/84908359/233593275-d2dadc1b-01c6-4047-84ed-27ac98298714.png)
+
+
+
+
+
 
