@@ -1,72 +1,100 @@
+Certainly, here's a cleaner and more organized version of the GitHub README:
+
 # DevRev-Backend-Flight-Booking-System
-The task was to make a some backend functionalities (CRUD Operations)
-Create a web application for flight ticket booking. Use any tech stack for the backend and db.
-A console based application would work. Submissions with a very basic UI will be given extra
-marks
 
-Type of Users
-a. User
-b. Admin
-User Use Cases
-● Login
-● Sign up
-● Searching for flights based on date and time
-● Booking tickets on a flight based on availability (assuming the default
-seat count is 60)
-● My Booking -&gt; to list out all the bookings made by that user
-● Logout
-Admin Use Cases
-● Login (Seperate login for Admin)
-● Add Flights
-● Remove flights
-● View all the booking based on flight number and time
+The task was to create a web application for flight ticket booking with backend functionalities (CRUD Operations). A console-based application would work, but submissions with a very basic UI would be given extra marks.
 
-The front end part is still slightly left out where as the backend part is completed verified all the apis with postman
+## Type of Users
 
-->Tech Stack Used - Front end - HTML,CSS,React JS
-->                - Back end  - Node JS , Express JS.
-                  - Data base - MYSQL Work bench
-                  - Postman   - Testing API
-  -------------------------------------------------------------------------------------------
-  The datbase schema is as follows
-  There are three tables in karthikdb
-  1)flight    - cols - id,flight_name,flight_to,available,date_departure,time,seats,flight_fare,date_arrival
-  2)users     - cols - id,email,password,username,role
-  3)bookings  - cols - id,user_mail,flight_name,flight_to,date,flight_fare
-  -----------------------------------------------------------------------------------------------
-  
-  The Api  documentation is as follows
-http://localhost:3001/api/insert   ->  To enter user details into the database table named users along with his role
-                                   -> payload taken - email,pass,name,role
-http://localhost:3001/api/get_user -> To check if the user is admin or user in the tables users with this call and direct him to the appropriate route accordingly
-                                       payload taken - email,pass,name,role
-                                      
-http://localhost:3001/api/user_information ->  To get the user information i.e the user bookings from bookings table
-                                           ->  payload taken - email
-http://localhost:3001/api/search_flights   -> this is search for the flights based on the deatils entered by the user from flight table
-                                           -> payload taken flight_from,flight_to,flight_date,flight_time
-http://localhost:3001/api/flight_insert    -> to insert flight by admin into the flight table
-                                            -> payload taken - flight_name,flight_from,flight_to,date_departure,time,flight_fare,date_arrival,available
-                                            
-http://localhost:3001/api/search_flights_admin     -> to search flight from flight table by admin
-                                                    -> payload taken flight_id,flight_time.
-                                                    
-http://localhost:3001/api/delete_flights            -> to delete flight by the admin from flight table
-                                                    -> payload taken id
-http://localhost:3001/api/book_id                   -> to book a flight by the user and insert into bookings
-                                                    -> payload taken
-                                                      user_mail,flight_name flight_to flight_from date flight_fare 
-                                                      
-Note :- All the API are tested by api with a 200 status code and are in working condition.
-----------------------------------------------------------------------------------------------------------------------------------------
-Front end-User side front end completed,Admin side some part of the front end is left out due to time constrainsts but the backend is completed for both of them.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-dependencies needed to run  cors,react-router-dom,node modules,mysql,express,axios.
--------------------------------------------------------------------------------------------
+- User
+- Admin
 
+## User Use Cases
 
-  
+- Login
+- Sign up
+- Search for flights based on date and time
+- Book tickets on a flight based on availability (assuming the default seat count is 60)
+- My Booking -> list all bookings made by the user
+- Logout
 
- 
+## Admin Use Cases
 
+- Login (Separate login for Admin)
+- Add flights
+- Remove flights
+- View all bookings based on flight number and time
 
+## Tech Stack
+
+- Front end: HTML, CSS, React JS
+- Back end: Node JS, Express JS
+- Database: MySQL Workbench
+- Postman: Testing API
+
+## Database Schema
+
+There are three tables in the karthikdb database:
+
+1. flight table - columns: id, flight_name, flight_to, available, date_departure, time, seats, flight_fare, date_arrival
+2. users table - columns: id, email, password, username, role
+3. bookings table - columns: id, user_mail, flight_name, flight_to, date, flight_fare
+
+## API Documentation
+
+### Insert User Details
+
+- Endpoint: http://localhost:3001/api/insert
+- Payload: email, pass, name, role
+
+### Check User Role
+
+- Endpoint: http://localhost:3001/api/get_user
+- Payload: email, pass, name, role
+
+### Get User Information
+
+- Endpoint: http://localhost:3001/api/user_information
+- Payload: email
+
+### Search Flights
+
+- Endpoint: http://localhost:3001/api/search_flights
+- Payload: flight_from, flight_to, flight_date, flight_time
+
+### Insert Flight
+
+- Endpoint: http://localhost:3001/api/flight_insert
+- Payload: flight_name, flight_from, flight_to, date_departure, time, flight_fare, date_arrival, available
+
+### Search Flights by Admin
+
+- Endpoint: http://localhost:3001/api/search_flights_admin
+- Payload: flight_id, flight_time
+
+### Delete Flight
+
+- Endpoint: http://localhost:3001/api/delete_flights
+- Payload: id
+
+### Book Flight
+
+- Endpoint: http://localhost:3001/api/book_id
+- Payload: user_mail, flight_name, flight_to, flight_from, date, flight_fare
+
+Note: All APIs have been tested with a 200 status code and are in working condition.
+
+## Front End
+
+The user-side front end is completed, but some part of the admin-side front end is left out due to time constraints. However, the backend is completed for both of them.
+
+## Dependencies
+
+- cors
+- react-router-dom
+- node modules
+- mysql
+- express
+- axios
+
+By following this format, your GitHub README will be more visually appealing and easier to read.
